@@ -1,0 +1,12 @@
+.section{
+    margin: 40rpx;
+    padding: 20rpx 40rpx;
+}
+.title{
+    font-size: 40rpx;
+}
+.input{
+    margin-top: 40rpx;
+    border-bottom: 1px solid #000;
+    font-size: 35rpx;
+}

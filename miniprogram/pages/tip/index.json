@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小组信息页面",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

@@ -1,0 +1,16 @@
+<view wx:if="{{groupId}}">
+  <view class="cover">
+    <image src="/images/logo.jpg" class="logo" />
+  </view>  
+  <view class="groupName">第{{groupId}}组</view>
+  <view class="tips">小组信息:{{info}}</view>
+  <view class="groupLeader"><text class="title">组长：{{groupLeader}}</text></view>
+  <view class="members">
+    <text wx:for="{{members}}" wx:key="members" class="membersEach">组员：{{item}}</text>
+  </view>
+  <view class="rule">请遵守规则一</view>
+  <view class="rule">请遵守规则二</view>
+  <view class="rule">请遵守规则三</view>
+  <view class="rule">请遵守规则n</view>
+</view>
+<view wx:else class="error">你没有小组</view>

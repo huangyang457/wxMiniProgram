@@ -1,0 +1,9 @@
+<view class="page">
+    <view wx:for="{{groupList}}" wx:key="groupId" style="background-color: green; margin: 50rpx; padding: 50rpx; border-radius: 50rpx;">
+        <navigator url="/pages/form/index?groupId={{item.groupId}}">
+            <view class="">组号：{{item.groupId}}</view>
+            <view>地区：{{item.region[0]}}</view>
+            <view>描述：{{item.info}}</view>
+        </navigator>
+    </view>
+</view>

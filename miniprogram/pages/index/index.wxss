@@ -1,0 +1,26 @@
+.cover {
+  background-color: rgb(188, 184, 184);
+  padding: 80rpx;
+  text-align: center;
+}
+.logo {
+  width: 180rpx;
+  height: 180rpx;
+  object-fit: cover;
+}
+.title {
+  text-align: center;
+  padding: 20rpx 0;
+}
+.choose {
+  text-align: center;
+}
+.join {
+  width: 500rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  color: aliceblue;
+  text-align: center;
+  background-color: green;
+  margin: 40rpx auto;
+}

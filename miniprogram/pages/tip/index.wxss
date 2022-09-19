@@ -1,0 +1,62 @@
+.cover {
+    background-color: rgb(188, 184, 184);
+    padding: 80rpx;
+    text-align: center;
+}
+
+.logo {
+    width: 280rpx;
+    height: 280rpx;
+    object-fit: cover;
+}
+
+.groupName {
+    width: 350rpx;
+    height: 100rpx;
+    background-color: rgb(79, 77, 77);
+    color: aliceblue;
+    font-size: 80rpx;
+    line-height: 100rpx;
+    text-align: center;
+    margin: 20rpx auto;
+}
+
+.groupLeader{
+    margin: 50rpx 0 20rpx 50rpx;
+}
+.title {
+    margin-right: 50%;
+    padding: 10rpx 10rpx;
+    background-color: rgb(177, 202, 246);
+    border-radius: 10%;
+    text-align: center;
+}
+.members{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30rpx;
+    margin: 30rpx 80rpx;
+}
+.membersEach{
+    background-color: rgb(208, 223, 247);
+    border-radius: 10%;
+    text-align: center;
+}
+.tips{
+    padding: 50rpx;
+    background-color: rgb(242, 230, 192);
+    text-align: center;
+}
+.rule {
+    width: 80%;
+    margin: 15rpx auto;
+    padding: 10rpx;
+    background-color: rgb(249, 176, 176);
+    border-radius: 5%;
+    text-align: center;
+}
+.error {
+    text-align: center;
+    margin-top: 30%;
+    font-size: 80rpx;
+}
