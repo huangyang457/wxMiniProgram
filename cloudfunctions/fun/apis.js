@@ -1,0 +1,1 @@
+module.exports = ["createGroup.js","getManyGroup.js","getMyGroup.js","getTip.js","joinGroup.js"]

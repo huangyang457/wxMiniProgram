@@ -11,9 +11,9 @@ Page({
         groupId: e.groupId[0]
       })
       wx.cloud.callFunction({
-        name: "quickstartFunctions",
+        name: "fun",
         data: {
-          type: "getTip",
+          api: "getTip",
           data: {
             groupId: e.groupId
           },

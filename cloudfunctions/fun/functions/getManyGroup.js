@@ -1,13 +1,6 @@
-const cloud = require("wx-server-sdk");
-
-cloud.init({
-    env: cloud.DYNAMIC_CURRENT_ENV,
-});
-
-const db = cloud.database();
-const _ = db.command;  //command数据库操作符
-module.exports = async (event) => {
+module.exports = async (args, db, openId, ctx) => {
     try {
+        const _ = db.command;  //command数据库操作符
         //查询test-group表 
         let res = await db.collection("test-group")
         // 成员小于6的数据

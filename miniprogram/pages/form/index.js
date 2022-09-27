@@ -15,9 +15,9 @@ Page({
     let u = e.detail.value;
     if (this.data.groupId) {
       wx.cloud.callFunction({
-        name: "quickstartFunctions",
+        name: "fun",
         data: {
-          type: "joinGroup",
+          api: "joinGroup",
           data: {
             ...u,
             birth: this.data.date,
@@ -47,9 +47,9 @@ Page({
       })
     } else {
       wx.cloud.callFunction({
-        name: "quickstartFunctions",
+        name: "fun",
         data: {
-          type: "createGroup",
+          api: "createGroup",
           data: {
             ...u,
             birth: this.data.date,

@@ -1,14 +1,4 @@
-const cloud = require("wx-server-sdk");
-
-cloud.init({
-    env: cloud.DYNAMIC_CURRENT_ENV,
-});
-
-const db = cloud.database();
-let wxContext = cloud.getWXContext();
-let openId = wxContext.OPENID;
-
-module.exports = async (event) => {
+module.exports = async (args, db, openId, ctx) => {
     try {
         let res = await db.collection("test-form").where({
             openId: openId

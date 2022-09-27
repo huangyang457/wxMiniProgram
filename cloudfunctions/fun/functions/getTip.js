@@ -1,24 +1,14 @@
-const cloud = require("wx-server-sdk");
-
-cloud.init({
-    env: cloud.DYNAMIC_CURRENT_ENV,
-});
-
-const db = cloud.database();
-
-module.exports = async (event) => {
+module.exports = async (args, db, openId, ctx) => {
     try {
-        let u = event.data;
-        const _ = db.command;
         let membersNickname = [];
     
         let groupLeader = await db.collection("test-form").where({
-            groupId: Number(u.groupId),
+            groupId: Number(args.groupId),
             isLeader: true
         })
         .get();
         let members = await db.collection("test-form").where({
-            groupId: Number(u.groupId),
+            groupId: Number(args.groupId),
             isLeader: false
         })
         .get();
